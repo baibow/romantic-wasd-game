@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffd6ec, #ffeef7);
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: #ff4da6;
+  margin-top: 20px;
+}
+
+.game {
+  width: 400px;
+  height: 400px;
+  background: white;
+  margin: 30px auto;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(255,0,120,0.2);
+}
+
+#player {
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  left: 10px;
+  transition: 0.1s;
+}
+
+#heart {
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+  right: 20px;
+  animation: float 1.5s infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+
+#message {
+  font-size: 24px;
+  color: #ff2e8b;
+}
+
+.hidden {
+  display: none;
+}
